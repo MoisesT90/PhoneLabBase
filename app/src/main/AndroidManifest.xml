@@ -30,6 +30,9 @@
             android:name=".AccelerometerActivity"
             android:exported="false" />
         <activity
+            android:name=".HistorialActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

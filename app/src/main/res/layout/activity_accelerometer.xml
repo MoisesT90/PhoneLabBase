@@ -70,44 +70,42 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="20dp"
             app:cardCornerRadius="18dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="18dp">
+                android:orientation="vertical">
                 <TextView
-                    android:id="@+id/tvMagnitude"
+                    android:id="@+id/tvMuestras"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Magnitud: 0.00 m/s²"
-                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+                    android:text="Muestras de la sesión"/>
                 <TextView
-                    android:id="@+id/tvMovement"
+                    android:id="@+id/tvTotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Movimiento: --"
-                    android:textSize="18sp" />
-                <TextView
-                    android:id="@+id/tvOrientation"
+                    android:text="Total almacenado"/>
+                <Button
+                    android:id="@+id/btnIniciar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Orientación: --"
-                    android:textSize="18sp" />
+                    android:layout_marginTop="20dp"
+                    android:text="Iniciar registro"/>
+                <Button
+                    android:id="@+id/btnDetener"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Detener registro"/>
+                <Button
+                    android:id="@+id/btnHistorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Ver historial"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:id="@+id/tvAccChallenge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Reto: registra la magnitud máxima y cuenta eventos de movimiento fuerte."
-            android:textColor="@color/teal_secondary"
-            android:textStyle="bold" />
 
     </LinearLayout>
 </ScrollView>
